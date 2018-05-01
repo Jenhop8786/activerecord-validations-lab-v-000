@@ -10,7 +10,7 @@ CLICKBAIT = [/Won\'t Believe/i, /Secret/i, /Top[0-9]*/i, /Guess/i]
 
   def clickbait
     if CLICKBAIT.none? {|t| t.match title}
-      errors.add(:title, "Smells a little clickbait-y!")
+      errors.add(:title, "Must be clickbait!")
     end
   end
 end
